@@ -877,7 +877,7 @@ function modal(title, description, styles = {}) {
 }
 // Util functions
 
-const ws = new WebSocket("ws://localhost:8999/ws")
+const ws = new WebSocket("ws://localhost/ws")
 
 ws.onmessage = (message) => {
     loadSettings(message.data)
